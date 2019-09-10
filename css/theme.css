@@ -1,0 +1,81 @@
+#a {
+    background: #A6656A;
+}
+
+#b {
+    background: #548C82;
+}
+
+#c {
+    background: #BF9004;
+}
+
+#d {
+    background: #A66D03;
+}
+
+#e {
+    background: #401201;
+}
+
+#f {
+    background: #54BF83;
+}
+
+#g {
+    background: #6F7302;
+}
+
+#h {
+    background: #F2B6A0;
+
+}
+
+#i {
+    background: #F25E5E;
+}
+
+
+@media (min-width:768px) {
+
+    #a {
+        background: #406E73;
+    }
+
+    #b {
+        background: #A6882D;
+
+    }
+
+    #c {
+        background: #8C4A23;
+
+    }
+
+    #d {
+        background: #732119;
+    }
+
+    #e {
+        background: #8C2323;
+    }
+
+    #f {
+        background: #012840;
+    }
+
+    #g {
+        background: #18818C;
+    }
+
+    #h {
+        background: #04BFAD;
+
+    }
+
+    #i {
+        background: #B0D9C1;
+
+    }
+
+}
