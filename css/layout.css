@@ -3,18 +3,54 @@ body {}
 main {
     min-width: 480px;
     margin: 0 auto;
-    max-width:767px;
+    max-width: 767px;
 }
 
 .col-2 {
     width: 50%;
-    float:left;
+    float: left;
 }
 
-footer {clear:both;}
+footer {
+    clear: both;
+}
 
 @media (min-width:768px) {
 
-    
-    
-} /* end desktop
+    main {
+        max-width: 960px;
+        min-width: 960px;
+    }
+
+    aside {
+        float: left;
+        height: 600px;
+    }
+
+    .heroes {
+        width: 760px;
+        float: left;
+    }
+
+    .articles {
+        width: 760px;
+        float: left;
+    }
+
+    .col-2-lg {
+        width: 50%;
+        float: left;
+    }
+
+    .col-4-lg {
+        width: 25%;
+    }
+
+    footer {
+        float: left;
+        clear: none;
+    }
+
+}
+
+/* end desktop
