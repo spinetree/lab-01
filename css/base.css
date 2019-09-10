@@ -1,0 +1,12 @@
+header,
+aside,
+section,
+article,
+footer {
+    box-sizing: border-box;
+    border: 1px solid #333;
+    background: #ccc;
+    text-align:center;
+    border-collapse:collapse;
+}
+
