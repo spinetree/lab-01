@@ -1,0 +1,73 @@
+#a {
+    background: #A6656A;
+}
+
+#b {
+    background: #548C82;
+}
+
+#c {
+    background: #BF9004;
+}
+
+#e {
+    background: #A66D03;
+}
+
+#f {
+    background: #401201;
+}
+
+#g {
+    background: #A6656A;
+}
+
+#h {
+    background: #548C82;
+
+}
+
+#i {
+    background: #BF9004;
+}
+
+
+@media (min-width:768px) {
+
+    #a {
+        background: #8C1620;
+    }
+
+    #b {
+        background: #F2C84B;
+
+    }
+
+    #c {
+        background: #D9BC9A;
+
+    }
+
+    #e {
+        background: #40281B;
+    }
+
+    #f {
+        background: #D94141;
+    }
+
+    #g {
+        background: #8C1620;
+    }
+
+    #h {
+        background: #F2C84B;
+
+    }
+
+    #i {
+        background: #D9BC9A;
+
+    }
+
+}
