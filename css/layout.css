@@ -1,56 +1,102 @@
-body {}
-
-main {
-    min-width: 480px;
+.grid-page {
+    display: grid;
+    width: 100%;
     margin: 0 auto;
-    max-width: 767px;
+    grid-gap:0px;
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        75px 150px 250px 500px 80px;
+
+    grid-template-areas:
+        'header'
+        'aside'
+        'heroes'
+        'articles'
+        'footer';
 }
 
-.col-2 {
-    width: 50%;
-    float: left;
+.grid-page header {
+    grid-area: header;
 }
 
-footer {
-    clear: both;
+.grid-page aside {
+    grid-area: aside;
+    line-height: 150px;
 }
+
+.heroes {
+    grid-area: heroes;
+
+}
+
+.articles {
+    grid-area: articles;
+}
+
+.grid-page footer {
+    grid-area: footer;
+
+}
+
 
 @media (min-width:768px) {
 
-    main {
-        max-width: 960px;
-        min-width: 960px;
+    .grid-page {
+        margin: 0 auto;
+        width: 768px;
+        grid-template-columns: 1fr;
+        grid-template-rows:
+            75px 150px 125px 500px 80px;
     }
 
-    aside {
-        float: left;
-        height: 600px;
+    .grid-page aside {
+        grid-area: aside;
     }
 
     .heroes {
-        width: 760px;
-        float: left;
+        display: flex;
+        width:auto;
+
+    }
+
+    .hero {
+        flex-basis:50%;
+        /* flex-grow:1; */
     }
 
     .articles {
-        width: 760px;
-        float: left;
+        display: flex;
     }
 
-    .col-2-lg {
-        width: 50%;
-        float: left;
-    }
-
-    .col-4-lg {
-        width: 25%;
-    }
-
-    footer {
-        float: left;
-        clear: none;
+    .articles article {
+        flex-basis:25%;
+        /* flex-grow:1; */
     }
 
 }
 
-/* end desktop
+
+@media (min-width:1023px) {
+
+    .grid-page {
+        width: 960px;
+    }
+
+    .grid-page {
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows:
+            75px 200px 250px 150px;
+        grid-template-areas:
+            'header header header header'
+            'aside heroes heroes heroes'
+            'aside articles articles articles'
+            'aside footer footer footer';
+
+    }
+
+    .grid-page .main {
+        grid-column: 2 / 4;
+        width:auto;
+    }
+
+}

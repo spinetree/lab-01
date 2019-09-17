@@ -4,9 +4,9 @@ aside,
 article,
 footer {
     box-sizing: border-box;
-    border: 1px solid #333;
+    /* outline: 1px solid #333; */
     background: #ccc;
     text-align:center;
-    border-collapse:collapse;
+    /* border-collapse:collapse; */
 }
 
