@@ -1,125 +1,97 @@
-.grid-container {
-    display: grid;
-}
-
 .grid-page {
-    width:480px;
-    margin:0 auto;
-    grid-template-rows: 75px 150px 250px 500px 80px;
-    grid-template-columns: 480px;
-}
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows:
+        75px 150px 250px 500px 80px;
 
-.grid-page header,
-.grid-page aside,
-.heroes,
-.articles {
-    grid-column: 1 / 2;
+    grid-template-areas:
+        'header'
+        'aside'
+        'heroes'
+        'articles'
+        'footer';
 }
 
 .grid-page header {
-    grid-row:1 / 2;
+    grid-area: header;
 }
 
 .grid-page aside {
-    grid-row: 2 / 3;
-}
-
-.grid-page .main {
-    grid-row: 3 / 4;
+    grid-area: aside;
+    line-height: 150px;
 }
 
 .heroes {
-    grid-row: 3 / 4;
+    grid-area: heroes;
 
 }
 
 .articles {
-    grid-row: 5 / 7;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:250px 250px;
+    grid-area: articles;
 }
 
 .grid-page footer {
-    grid-row: 7/8;
+    grid-area: footer;
+
 }
 
 
 
 @media (min-width:768px) {
-    
+
     .grid-page {
         margin: 0 auto;
         width: 768px;
-    }
-
-    .grid-page .main {
-        grid-template-columns: 1fr 1fr;
-        
-    }
-    
-    .grid-page header {
-        grid-column: 1/3;
+        grid-template-columns: 1fr;
+        grid-template-rows:
+            75px 150px 125px 500px 80px;
     }
 
     .grid-page aside {
-        
+        grid-area: aside;
     }
-    
+
     .heroes {
-        grid-template-columns: 1fr 1fr;
+        display: flex;
     }
-    
-    .articles {}
+
+    .hero {
+        flex-grow: 1;
+    }
+
+    .articles {
+        display: flex;
+    }
+
+    .articles article {
+        flex-grow: 1;
+    }
 
 }
 
 
 @media (min-width:1023px) {
-    
-    .grid-page {
-        width:960px;
-    }
-
-    .grid-page.grid-container {
-        grid-template-columns: 200px 760px;
-        grid-template-rows: 75px 600px;
-    }
 
     .grid-page {
         width: 960px;
     }
 
+    .grid-page {
+        grid-template-columns: 200px 380px 380px;
+        grid-template-rows:
+            75px 200px 250px 150px;
+        grid-template-areas:
+            'header header header header'
+            'aside heroes heroes heroes'
+            'aside articles articles articles'
+            'aside footer footer footer';
+
+    }
+
     .grid-page .main {
-        grid-column: 2 / 3;
-        grid-template-columns: 760px;
-        grid-template-rows: 200px 250px 150px;
-    }
-
-    .grid-page header {
-        grid-column: 1 / 3;
-    }
-
-    aside {
-        grid-column: 1 / 1;
-        grid-row: 2 / 5;
-    }
-
-    .heroes {
-        grid-row: 1 / 1;
-        grid-column: 1 / 6;
-    }
-
-    .articles {
-        grid-column: 1 / 3;
-        grid-row: 2/3;
-        grid-template-columns: repeat(4, 25%);
-    }
-
-    .grid-page footer {
-        grid-row: 3/4;
-        grid-column: 1/5;
+        grid-column: 2 / 4;
     }
 
 }
-
-/* end desktop
