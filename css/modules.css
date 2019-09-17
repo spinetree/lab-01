@@ -1,53 +1,46 @@
 header {
-    /* height: 75px; */
     line-height: 75px;
 }
 
 aside {
-    /* height: 150px; */
     line-height: 150px;
 }
 
 .hero {
-    /* height: 125px; */
     line-height: 125px;
 }
 
 article {
-    /* height: 250px; */
+
     line-height: 250px;
 
 }
 
 footer {
-    /* height: 80px; */
     line-height: 80px;
 }
 
 @media (min-width:768px) {
 
     .hero {
-        /* height: 200px; */
         line-height: 200px;
     }
 
     aside {
-        /* height: 600px;
-        width: 200px; */
         line-height: 600px;
     }
 
     .articles > article {
-        /* height: 250px; */
         line-height: 250px;
     }
 
     footer {
-        /* float: left;
-        width: 760px;
-        height: 150px; */
-        line-height: 150px;
+    line-height: 150px;
         
     }
+
+}
+
+@media (min-width:1023px) {
 
 }

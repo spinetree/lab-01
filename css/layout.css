@@ -2,6 +2,7 @@
     display: grid;
     width: 100%;
     margin: 0 auto;
+    grid-gap:0px;
     grid-template-columns: 1fr;
     grid-template-rows:
         75px 150px 250px 500px 80px;
@@ -38,7 +39,6 @@
 }
 
 
-
 @media (min-width:768px) {
 
     .grid-page {
@@ -55,10 +55,13 @@
 
     .heroes {
         display: flex;
+        width:auto;
+
     }
 
     .hero {
-        flex-grow: 1;
+        flex-basis:50%;
+        /* flex-grow:1; */
     }
 
     .articles {
@@ -66,7 +69,8 @@
     }
 
     .articles article {
-        flex-grow: 1;
+        flex-basis:25%;
+        /* flex-grow:1; */
     }
 
 }
@@ -79,7 +83,7 @@
     }
 
     .grid-page {
-        grid-template-columns: 200px 380px 380px;
+        grid-template-columns: 200px 1fr 1fr;
         grid-template-rows:
             75px 200px 250px 150px;
         grid-template-areas:
@@ -92,6 +96,7 @@
 
     .grid-page .main {
         grid-column: 2 / 4;
+        width:auto;
     }
 
 }

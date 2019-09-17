@@ -79,3 +79,45 @@
     }
 
 }
+
+@media (min-width:1023px) {
+
+    #a {
+        background: #7EB3BF;
+    }
+
+    #b {
+        background: #8C8630;
+
+    }
+
+    #c {
+        background: #F2F0CE;
+
+    }
+
+    #d {
+        background: #F2BB9B;
+    }
+
+    #e {
+        background: #D9765F;
+    }
+
+    #f {
+        background: #F2D4FF;
+    }
+
+    #g {
+        background: #CBB5E8;
+    }
+
+    #h {
+        background: #D0C7FF;
+
+    }
+
+    #i {
+        background: #FFC7E6;
+
+    }
